@@ -60,11 +60,11 @@ int main()
 
     struct TreeNode tree = {1, &l1, &r1};
 
-    printf("%u%u%u%u%u%u%u\n",tree.val, tree.left->val, tree.left->left->val, tree.left->right->val, tree.right->val, tree.right->left->val, tree.right->right->val);
+    printf("%d%d%d%d%d%d%d\n",tree.val, tree.left->val, tree.left->left->val, tree.left->right->val, tree.right->val, tree.right->left->val, tree.right->right->val);
     // 执行转换
     invertTree(&tree);
 
-    printf("%u%u%u%u%u%u%u\n",tree.val, tree.left->val, tree.left->left->val, tree.left->right->val, tree.right->val, tree.right->left->val, tree.right->right->val);
+    printf("%d%d%d%d%d%d%d\n",tree.val, tree.left->val, tree.left->left->val, tree.left->right->val, tree.right->val, tree.right->left->val, tree.right->right->val);
 
     return 0;
 }
