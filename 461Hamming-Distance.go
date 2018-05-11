@@ -17,7 +17,7 @@ func hammingDistance(x int, y int) int {
 
     for bitMask := 1; bitMask > 0; bitMask <<= 1 {
 		// 使用 bitMask 移位来比较每一位是 1 还是 0
-        if bitMask & xor != 0 {
+        if (bitMask & xor) != 0 {
             count++ 
         }
     }
