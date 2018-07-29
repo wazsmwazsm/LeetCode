@@ -1,3 +1,4 @@
+// see: https://leetcode.com/problems/number-of-1-bits/description/
 #include <stdio.h>
 
 typedef unsigned int uint32_t;

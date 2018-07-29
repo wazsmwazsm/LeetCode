@@ -1,3 +1,4 @@
+// see: https://leetcode.com/problems/hamming-distance/description/
 package main
 
 import "fmt"

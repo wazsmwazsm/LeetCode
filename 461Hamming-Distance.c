@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// see: https://leetcode.com/problems/hamming-distance/description/
 
 int main() {
 
