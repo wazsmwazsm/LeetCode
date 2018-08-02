@@ -7,6 +7,7 @@ func countBits(num int) []int {
     count := make([]int, num + 1)
     
     for i := 0; i <= num; i++ {
+		// i >> 1 等于 i/2,  i & 1 等于 i%2
         count[i] = count[i >> 1] + i & 1
     }
     
