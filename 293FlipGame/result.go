@@ -1,3 +1,4 @@
+// see https://leetcode-cn.com/problems/flip-game/
 package main
 
 import (
