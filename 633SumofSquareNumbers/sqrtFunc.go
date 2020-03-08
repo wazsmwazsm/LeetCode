@@ -1,9 +1,7 @@
-// https://leetcode-cn.com/problems/sum-of-square-numbers/description/
-
-// 双指针解法 (逼近、缩减范围)
-// 时间 O(sqrt(c)) (从 0 ~ sqrt(c) 遍历) 空间 O(1)
-
 package main
+
+// 枚举 a, 直接开发库函数找到 b, 看看是不是整数 (对比 ceil 和 floor)
+// 时间 O(sqrt(c)), 空间 O(1)
 
 import (
 	"fmt"
@@ -31,23 +29,10 @@ func main() {
 
 func judgeSquareSum(c int) bool {
 
-	if c < 0 {
-		return false
-	}
-
-	a := 0
-	b := int(math.Sqrt(float64(c)))
-
-	for a <= b {
-		pow := a*a + b*b
-		if pow == c {
+	for a := 0; a*a <= c; a++ {
+		b := math.Sqrt(float64(c - a*a))
+		if math.Ceil(b) == math.Floor(b) {
 			return true
-		}
-
-		if pow < c {
-			a++
-		} else {
-			b--
 		}
 	}
 
