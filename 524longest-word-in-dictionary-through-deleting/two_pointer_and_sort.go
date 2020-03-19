@@ -19,7 +19,7 @@ func main() {
 // 时间：排序 O(logn) (快排), 遍历 O(n) and 子串 O(n) = O(n^2)
 // 时间复杂度为 O(n^2) + O(logn) = O(n^2)
 // 空间：子串查找需要创建变量, 遍历后空间为 O(n), 排序(快排)空间为 O(logn)
-// 空间复杂度为 O(logn)
+// 空间复杂度为 O(n)
 
 func findLongestWord(s string, d []string) string {
 	var word string
